@@ -43,7 +43,7 @@ def predict():
 
         # print([[brand_name,age,kms_driven,owner,power]])
         # print("types of data:",type(brand_name),type(age),type(kms_driven),type(owner),type(power))
-        data=[[brand_name,owner,age,kms_driven,power]]
+        data=[[owner,brand_name,kms_driven,age,power]]
         pred=model.predict(data)
         print("prediction",pred)
         return render_template('project.html',prediction=pred)
